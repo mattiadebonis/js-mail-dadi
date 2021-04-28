@@ -8,11 +8,12 @@ var mailPresente = false
 
 //itera array mail registrate
 for(var i=0; i < mailRegistrate.length; i++){
-    console.log(mailPresente)
-
+    console.log(mailRegistrate[i])
+    
     // se mail array è uguale alla mail inserita variabile booleana allora true
     if (mailRegistrate[i] == mailUtente){
         mailPresente = true
+        i=6//termina ciclo
     }
 }
 
