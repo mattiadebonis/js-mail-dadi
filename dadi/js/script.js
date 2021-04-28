@@ -15,8 +15,11 @@ if (numeroGiocatore > numeroComputer){
     pareggio = true
 }
 
-// se numero giocatore è maggiore numero computer true
+//restituisci risultati lancio
+document.getElementById("giocatore").innerHTML = "Giocatore " + numeroGiocatore
+document.getElementById("computer").innerHTML = "Computer " + numeroComputer
 
+// se numero giocatore è maggiore numero computer true
 if (vittoriaGiocatore == true){
     document.getElementById("esito").innerHTML = "Ha vinto il giocatore"
 }else if (pareggio == true){
